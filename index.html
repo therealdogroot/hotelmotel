@@ -1,121 +1,97 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #519ce9}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #9ba2b1}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #d65562}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #88b966}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #c58853}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #9ba2b1; min-height: 16.0px}
-    span.s1 {color: #d65562}
-    span.s2 {color: #c58853}
-    span.s3 {color: #88b966}
-    span.s4 {color: #9ba2b1}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hotel Motel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            padding: 2rem;
+            font-family: Arial, sans-serif;
+        }
+        .hotel-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .search-form {
+            margin-top: 2rem;
+        }
+        .search-form input {
+            margin-right: 1rem;
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p2">&lt;<span class="s1">html</span> <span class="s2">lang</span>=<span class="s3">"en"</span>&gt;</p>
-<p class="p3"><span class="s4">&lt;</span>head<span class="s4">&gt;</span></p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;<span class="s1">meta</span> <span class="s2">charset</span>=<span class="s3">"UTF-8"</span>&gt;</p>
-<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span>&lt;</span><span class="s1">meta</span><span class="s4"> </span><span class="s2">name</span><span class="s4">=</span>"viewport"<span class="s4"> </span><span class="s2">content</span><span class="s4">=</span>"width=device-width, initial-scale=1"<span class="s4">&gt;</span></p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;<span class="s1">title</span>&gt;Hotel Motel&lt;/<span class="s1">title</span>&gt;</p>
-<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span>&lt;</span><span class="s1">link</span><span class="s4"> </span><span class="s2">rel</span><span class="s4">=</span>"stylesheet"<span class="s4"> </span><span class="s2">href</span><span class="s4">=</span>"https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"<span class="s4">&gt;</span></p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;<span class="s1">style</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span><span class="s1">body</span> {</p>
-<p class="p2"><span class="Apple-converted-space">            </span><span class="s3">padding</span>: <span class="s2">2rem</span>;</p>
-<p class="p2"><span class="Apple-converted-space">            </span><span class="s3">font-family</span>: Arial, sans-serif;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>}</p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">        </span></span>.hotel-image<span class="s4"> {</span></p>
-<p class="p2"><span class="Apple-converted-space">            </span><span class="s3">max-width</span>: <span class="s2">100%</span>;</p>
-<p class="p2"><span class="Apple-converted-space">            </span><span class="s3">height</span>: auto;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>}</p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">        </span></span>.search-form<span class="s4"> {</span></p>
-<p class="p2"><span class="Apple-converted-space">            </span><span class="s3">margin-top</span>: <span class="s2">2rem</span>;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>}</p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">        </span></span>.search-form<span class="s4"> </span><span class="s1">input</span><span class="s4"> {</span></p>
-<p class="p2"><span class="Apple-converted-space">            </span><span class="s3">margin-right</span>: <span class="s2">1rem</span>;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;/<span class="s1">style</span>&gt;</p>
-<p class="p3"><span class="s4">&lt;/</span>head<span class="s4">&gt;</span></p>
-<p class="p3"><span class="s4">&lt;</span>body<span class="s4">&gt;</span></p>
-<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span>&lt;</span><span class="s1">nav</span><span class="s4"> </span><span class="s2">class</span><span class="s4">=</span>"container-fluid"<span class="s4">&gt;</span></p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s1">ul</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;<span class="s1">li</span>&gt;&lt;<span class="s1">strong</span>&gt;HotelMotel.com&lt;/<span class="s1">strong</span>&gt;&lt;/<span class="s1">li</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;/<span class="s1">ul</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s1">ul</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;<span class="s1">li</span>&gt;&lt;<span class="s1">a</span> <span class="s2">href</span>=<span class="s3">"#"</span>&gt;Home&lt;/<span class="s1">a</span>&gt;&lt;/<span class="s1">li</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;<span class="s1">li</span>&gt;&lt;<span class="s1">a</span> <span class="s2">href</span>=<span class="s3">"#"</span>&gt;About&lt;/<span class="s1">a</span>&gt;&lt;/<span class="s1">li</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;<span class="s1">li</span>&gt;&lt;<span class="s1">a</span> <span class="s2">href</span>=<span class="s3">"#"</span> <span class="s2">role</span>=<span class="s3">"button"</span>&gt;Contact&lt;/<span class="s1">a</span>&gt;&lt;/<span class="s1">li</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;/<span class="s1">ul</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;/<span class="s1">nav</span>&gt;</p>
-<p class="p6"><span class="Apple-converted-space">    </span></p>
-<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span>&lt;</span><span class="s1">main</span><span class="s4"> </span><span class="s2">class</span><span class="s4">=</span>"container"<span class="s4">&gt;</span></p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s1">div</span> <span class="s2">class</span>=<span class="s3">"grid"</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;<span class="s1">section</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s1">hgroup</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;<span class="s1">h2</span>&gt;Welcome to HotelMotel.com&lt;/<span class="s1">h2</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;<span class="s1">h3</span>&gt;Your gateway to finding the best hotels!&lt;/<span class="s1">h3</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/<span class="s1">hgroup</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s1">p</span>&gt;Discover luxurious hotels at the best destinations around the world. Enter your desired destination below to find the perfect hotel for your stay.&lt;/<span class="s1">p</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s1">figure</span>&gt;</p>
-<p class="p4"><span class="s4"><span class="Apple-converted-space">                    </span>&lt;</span><span class="s1">img</span><span class="s4"> </span><span class="s2">src</span><span class="s4">=</span>"https://source.unsplash.com/featured/?hotel"<span class="s4"> </span><span class="s2">alt</span><span class="s4">=</span>"Beautiful hotel"<span class="s4"> </span><span class="s2">class</span><span class="s4">=</span>"hotel-image"<span class="s4">/&gt;</span></p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;<span class="s1">figcaption</span>&gt;&lt;<span class="s1">a</span> <span class="s2">href</span>=<span class="s3">"https://unsplash.com"</span> <span class="s2">target</span>=<span class="s3">"_blank"</span>&gt;Photo from Unsplash&lt;/<span class="s1">a</span>&gt;&lt;/<span class="s1">figcaption</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/<span class="s1">figure</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s1">h3</span>&gt;Find Your Hotel&lt;/<span class="s1">h3</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s1">p</span>&gt;Enter your destination to see a list of recommended hotels.&lt;/<span class="s1">p</span>&gt;</p>
-<p class="p4"><span class="s4"><span class="Apple-converted-space">                </span>&lt;</span><span class="s1">form</span><span class="s4"> </span><span class="s2">class</span><span class="s4">=</span>"search-form"<span class="s4"> </span><span class="s2">onsubmit</span><span class="s4">=</span>"event.preventDefault(); searchHotels();"<span class="s4">&gt;</span></p>
-<p class="p4"><span class="s4"><span class="Apple-converted-space">                    </span>&lt;</span><span class="s1">input</span><span class="s4"> </span><span class="s2">type</span><span class="s4">=</span>"text"<span class="s4"> </span><span class="s2">id</span><span class="s4">=</span>"destination"<span class="s4"> </span><span class="s2">name</span><span class="s4">=</span>"destination"<span class="s4"> </span><span class="s2">placeholder</span><span class="s4">=</span>"Enter a destination"<span class="s4"> </span><span class="s2">aria-label</span><span class="s4">=</span>"Destination"<span class="s4"> </span><span class="s2">required</span><span class="s4"> /&gt;</span></p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;<span class="s1">button</span> <span class="s2">type</span>=<span class="s3">"submit"</span>&gt;Search&lt;/<span class="s1">button</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/<span class="s1">form</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s1">div</span> <span class="s2">id</span>=<span class="s3">"results"</span>&gt;&lt;/<span class="s1">div</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;/<span class="s1">section</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;/<span class="s1">div</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;/<span class="s1">main</span>&gt;</p>
-<p class="p6"><span class="Apple-converted-space">    </span></p>
-<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span>&lt;</span><span class="s1">section</span><span class="s4"> </span><span class="s2">aria-label</span><span class="s4">=</span>"Subscribe example"<span class="s4">&gt;</span></p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s1">div</span> <span class="s2">class</span>=<span class="s3">"container"</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;<span class="s1">article</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s1">hgroup</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;<span class="s1">h2</span>&gt;Stay Updated&lt;/<span class="s1">h2</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;<span class="s1">h3</span>&gt;Subscribe to our newsletter&lt;/<span class="s1">h3</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/<span class="s1">hgroup</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s1">form</span> <span class="s2">class</span>=<span class="s3">"grid"</span>&gt;</p>
-<p class="p4"><span class="s4"><span class="Apple-converted-space">                    </span>&lt;</span><span class="s1">input</span><span class="s4"> </span><span class="s2">type</span><span class="s4">=</span>"text"<span class="s4"> </span><span class="s2">id</span><span class="s4">=</span>"firstname"<span class="s4"> </span><span class="s2">name</span><span class="s4">=</span>"firstname"<span class="s4"> </span><span class="s2">placeholder</span><span class="s4">=</span>"First Name"<span class="s4"> </span><span class="s2">aria-label</span><span class="s4">=</span>"First Name"<span class="s4"> </span><span class="s2">required</span><span class="s4"> /&gt;</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">                    </span>&lt;</span><span class="s1">input</span><span class="s4"> </span>type<span class="s4">=</span><span class="s3">"email"</span><span class="s4"> </span>id<span class="s4">=</span><span class="s3">"email"</span><span class="s4"> </span>name<span class="s4">=</span><span class="s3">"email"</span><span class="s4"> </span>placeholder<span class="s4">=</span><span class="s3">"Email"</span><span class="s4"> </span>aria-label<span class="s4">=</span><span class="s3">"Email"</span><span class="s4"> </span>required<span class="s4"> /&gt;</span></p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;<span class="s1">button</span> <span class="s2">type</span>=<span class="s3">"submit"</span> <span class="s2">onclick</span>=<span class="s3">"event.preventDefault()"</span>&gt;Subscribe&lt;/<span class="s1">button</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/<span class="s1">form</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;/<span class="s1">article</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;/<span class="s1">div</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;/<span class="s1">section</span>&gt;</p>
-<p class="p6"><span class="Apple-converted-space">    </span></p>
-<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span>&lt;</span><span class="s1">footer</span><span class="s4"> </span><span class="s2">class</span><span class="s4">=</span>"container"<span class="s4">&gt;</span></p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s1">small</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>&lt;<span class="s1">a</span> <span class="s2">href</span>=<span class="s3">"#"</span>&gt;Privacy Policy&lt;/<span class="s1">a</span>&gt; • &lt;<span class="s1">a</span> <span class="s2">href</span>=<span class="s3">"#"</span>&gt;Terms of Service&lt;/<span class="s1">a</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>&lt;/<span class="s1">small</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;/<span class="s1">footer</span>&gt;</p>
-<p class="p6"><br></p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;<span class="s1">script</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>function searchHotels() {</p>
-<p class="p2"><span class="Apple-converted-space">            </span>const destination = document.getElementById('destination').value;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>const resultsDiv = document.getElementById('results');</p>
-<p class="p2"><span class="Apple-converted-space">            </span>resultsDiv.innerHTML = `</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s1">h3</span>&gt;Hotels in ${destination}&lt;/<span class="s1">h3</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s1">ul</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;<span class="s1">li</span>&gt;&lt;<span class="s1">a</span> <span class="s2">href</span>=<span class="s3">"https://affiliate-link.com/hotel1"</span> <span class="s2">target</span>=<span class="s3">"_blank"</span>&gt;Hotel 1 in ${destination}&lt;/<span class="s1">a</span>&gt;&lt;/<span class="s1">li</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;<span class="s1">li</span>&gt;&lt;<span class="s1">a</span> <span class="s2">href</span>=<span class="s3">"https://affiliate-link.com/hotel2"</span> <span class="s2">target</span>=<span class="s3">"_blank"</span>&gt;Hotel 2 in ${destination}&lt;/<span class="s1">a</span>&gt;&lt;/<span class="s1">li</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span>&lt;<span class="s1">li</span>&gt;&lt;<span class="s1">a</span> <span class="s2">href</span>=<span class="s3">"https://affiliate-link.com/hotel3"</span> <span class="s2">target</span>=<span class="s3">"_blank"</span>&gt;Hotel 3 in ${destination}&lt;/<span class="s1">a</span>&gt;&lt;/<span class="s1">li</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span>&lt;/<span class="s1">ul</span>&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span>`;</p>
-<p class="p2"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;/<span class="s1">script</span>&gt;</p>
-<p class="p3"><span class="s4">&lt;/</span>body<span class="s4">&gt;</span></p>
-<p class="p3"><span class="s4">&lt;/</span>html<span class="s4">&gt;</span></p>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>HotelMotel.com</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" role="button">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Welcome to HotelMotel.com</h2>
+                    <h3>Your gateway to finding the best hotels!</h3>
+                </hgroup>
+                <p>Discover luxurious hotels at the best destinations around the world. Enter your desired destination below to find the perfect hotel for your stay.</p>
+                <figure>
+                    <img src="https://source.unsplash.com/featured/?hotel" alt="Beautiful hotel" class="hotel-image"/>
+                    <figcaption><a href="https://unsplash.com" target="_blank">Photo from Unsplash</a></figcaption>
+                </figure>
+                <h3>Find Your Hotel</h3>
+                <p>Enter your destination to see a list of recommended hotels.</p>
+                <form class="search-form" onsubmit="event.preventDefault(); searchHotels();">
+                    <input type="text" id="destination" name="destination" placeholder="Enter a destination" aria-label="Destination" required />
+                    <button type="submit">Search</button>
+                </form>
+                <div id="results"></div>
+            </section>
+        </div>
+    </main>
+    
+    <section aria-label="Subscribe example">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Stay Updated</h2>
+                    <h3>Subscribe to our newsletter</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name" aria-label="First Name" required />
+                    <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
+                    <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+                </form>
+            </article>
+        </div>
+    </section>
+    
+    <footer class="container">
+        <small>
+            <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a>
+        </small>
+    </footer>
+
+    <script>
+        function searchHotels() {
+            const destination = document.getElementById('destination').value;
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = `
+                <h3>Hotels in ${destination}</h3>
+                <ul>
+                    <li><a href="https://affiliate-link.com/hotel1" target="_blank">Hotel 1 in ${destination}</a></li>
+                    <li><a href="https://affiliate-link.com/hotel2" target="_blank">Hotel 2 in ${destination}</a></li>
+                    <li><a href="https://affiliate-link.com/hotel3" target="_blank">Hotel 3 in ${destination}</a></li>
+                </ul>
+            `;
+        }
+    </script>
 </body>
 </html>
